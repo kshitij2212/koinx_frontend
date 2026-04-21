@@ -48,7 +48,6 @@
   to { transform: rotate(360deg); }
 }
 
-/* ─── Header ──────────────────────────────────────────────────────────────── */
 .navbar {
   width: 100%;
   background: #111116;
@@ -148,7 +147,6 @@
   margin-left: 4px;
 }
 
-/* ─── Info Banner ─────────────────────────────────────────────────────────── */
 .info-banner {
   background: rgba(0, 82, 254, 0.08);
   border: 1px solid rgba(0, 82, 254, 0.2);
@@ -224,7 +222,6 @@
   transform: rotate(180deg);
 }
 
-/* ─── Cards Section ───────────────────────────────────────────────────────── */
 .cards-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -238,7 +235,6 @@
   }
 }
 
-/* ─── Card Base ───────────────────────────────────────────────────────────── */
 .card {
   border-radius: 16px;
   padding: 28px;
@@ -253,12 +249,11 @@
 }
 
 .card-blue {
-  background: #0052fe;
+  background: rgb(59, 130, 246);
   color: #ffffff;
   border: none;
 }
 
-/* ─── Card Header ─────────────────────────────────────────────────────────── */
 .card-header {
   margin-bottom: 24px;
 }
@@ -275,7 +270,7 @@
   margin-top: 16px;
   text-align: center;
   opacity: 0.9;
-  min-height: 1.25rem; /* Reserve vertical space */
+  min-height: 1.25rem;
   transition: opacity 0.3s ease;
 }
 
@@ -305,7 +300,6 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* ─── Gains Table inside Card ─────────────────────────────────────────────── */
 .gains-table {
   display: flex;
   flex-direction: column;
@@ -372,7 +366,6 @@
   color: #ffffff;
 }
 
-/* ─── Realised Box ────────────────────────────────────────────────────────── */
 .realised-box {
   display: flex;
   justify-content: space-between;
@@ -394,11 +387,10 @@
 }
 
 .value-reduced {
-  color: #4ade80 !important; /* Brighter green for better visibility on blue background */
+  color: #4ade80 !important;
   text-shadow: 0 0 15px rgba(74, 222, 128, 0.4);
 }
 
-/* ─── Savings Badge ───────────────────────────────────────────────────────── */
 .savings-badge {
   margin-top: 20px;
   background: rgba(255, 255, 255, 0.1);
@@ -412,7 +404,6 @@
   gap: 8px;
 }
 
-/* ─── Holdings Table Wrapper ──────────────────────────────────────────────── */
 .table-wrapper {
   background: #111116;
   border-radius: 16px;
@@ -445,7 +436,6 @@
   overflow-x: auto;
 }
 
-/* ─── Table ───────────────────────────────────────────────────────────────── */
 .holdings-table {
   width: 100%;
   border-collapse: collapse;
@@ -492,7 +482,7 @@
 }
 
 .holdings-table tbody tr.row-selected td {
-  background: rgba(0, 82, 254, 0.18) !important; /* Noticeable blue */
+  background: rgba(0, 82, 254, 0.18) !important;
 }
 
 .td-checkbox {
@@ -508,7 +498,6 @@ input[type="checkbox"] {
   border-radius: 4px;
 }
 
-/* ─── Coin Cell ───────────────────────────────────────────────────────────── */
 .coin-cell {
   display: flex;
   align-items: center;
@@ -536,7 +525,6 @@ input[type="checkbox"] {
   color: #94a3b8;
 }
 
-/* ─── Holding Cell ────────────────────────────────────────────────────────── */
 .holding-cell {
   display: flex;
   flex-direction: column;
@@ -552,13 +540,11 @@ input[type="checkbox"] {
   color: #94a3b8;
 }
 
-/* ─── Generic Cells ───────────────────────────────────────────────────────── */
 .td-value {
   font-size: 14px;
   font-weight: 600;
 }
 
-/* ─── Gain Cell ───────────────────────────────────────────────────────────── */
 .gain-cell {
   display: flex;
   flex-direction: column;
@@ -625,7 +611,6 @@ ar-fallback {
   text-overflow: ellipsis;
 }
 
-/* ─── Holding Cell Refinement ────────────────────────────────────────────── */
 .holding-amount {
   font-size: 13px;
   font-weight: 500;
@@ -637,13 +622,11 @@ ar-fallback {
   color: #94a3b8;
 }
 
-/* ─── Price Cell Refinement ──────────────────────────────────────────────── */
 .td-price {
   font-weight: 500;
   color: #ffffff;
 }
 
-/* ─── Amount to Sell Cell Refinement ─────────────────────────────────────── */
 .td-amount {
   font-weight: 500;
   color: #ffffff;
@@ -653,7 +636,6 @@ ar-fallback {
   color: rgba(255, 255, 255, 0.2);
 }
 
-/* ─── Mobile Optimizations ────────────────────────────────────────────────── */
 @media (max-width: 650px) {
   .app {
     padding: 24px 16px;
@@ -696,12 +678,9 @@ ar-fallback {
     font-size: 24px;
   }
 
-  /* Table Mobile Layout */
   .holdings-table {
     min-width: 0;
   }
-
-  /* Hide Total Value, Short-term, Long-term, Amount to Sell */
   .holdings-table th:nth-child(4),
   .holdings-table td:nth-child(4),
   .holdings-table th:nth-child(5),
